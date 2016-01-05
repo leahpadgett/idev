@@ -300,6 +300,7 @@
 				226C686B1C36F89E00BFCC0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
