@@ -10,7 +10,16 @@
 
 @interface ViewController : UIViewController {
     IBOutlet UIScrollView *scroller;
+    
 }
+
+
+- (IBAction)learnMore:(id)sender;
+
+- (IBAction)shopNow:(id)sender;
+
+- (IBAction)switchVideo:(id)sender;
+
 
 
 @end
