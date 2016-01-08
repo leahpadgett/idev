@@ -10,9 +10,13 @@
 		226C68571C36F89E00BFCC0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 226C68561C36F89E00BFCC0E /* main.m */; };
 		226C685A1C36F89E00BFCC0E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 226C68591C36F89E00BFCC0E /* AppDelegate.m */; };
 		226C685D1C36F89E00BFCC0E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 226C685C1C36F89E00BFCC0E /* ViewController.m */; };
-		226C68601C36F89E00BFCC0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 226C685E1C36F89E00BFCC0E /* Main.storyboard */; };
 		226C68621C36F89E00BFCC0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 226C68611C36F89E00BFCC0E /* Assets.xcassets */; };
 		226C68651C36F89E00BFCC0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 226C68631C36F89E00BFCC0E /* LaunchScreen.storyboard */; };
+		22E752CF1C3EB3920021035E /* SwitchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22E752CE1C3EB3920021035E /* SwitchViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		22E752D21C3EB5EE0021035E /* SwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E752D11C3EB5EE0021035E /* SwitchViewController.m */; settings = {ASSET_TAGS = (); }; };
+		22E752D41C3EE5A70021035E /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E752D31C3EE5A70021035E /* MediaPlayer.framework */; };
+		22E752D61C3EEDC10021035E /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E752D51C3EEDC10021035E /* AVKit.framework */; };
+		22E752D81C3EF9CB0021035E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E752D71C3EF9CB0021035E /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +26,15 @@
 		226C68591C36F89E00BFCC0E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		226C685B1C36F89E00BFCC0E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		226C685C1C36F89E00BFCC0E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		226C685F1C36F89E00BFCC0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		226C68611C36F89E00BFCC0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		226C68641C36F89E00BFCC0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		226C68661C36F89E00BFCC0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22E752CE1C3EB3920021035E /* SwitchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwitchViewController.xib; sourceTree = "<group>"; };
+		22E752D01C3EB5EE0021035E /* SwitchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitchViewController.h; sourceTree = "<group>"; };
+		22E752D11C3EB5EE0021035E /* SwitchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchViewController.m; sourceTree = "<group>"; };
+		22E752D31C3EE5A70021035E /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		22E752D51C3EEDC10021035E /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		22E752D71C3EF9CB0021035E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +42,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22E752D81C3EF9CB0021035E /* AVFoundation.framework in Frameworks */,
+				22E752D61C3EEDC10021035E /* AVKit.framework in Frameworks */,
+				22E752D41C3EE5A70021035E /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +74,9 @@
 				226C68591C36F89E00BFCC0E /* AppDelegate.m */,
 				226C685B1C36F89E00BFCC0E /* ViewController.h */,
 				226C685C1C36F89E00BFCC0E /* ViewController.m */,
-				226C685E1C36F89E00BFCC0E /* Main.storyboard */,
+				22E752CE1C3EB3920021035E /* SwitchViewController.xib */,
+				22E752D01C3EB5EE0021035E /* SwitchViewController.h */,
+				22E752D11C3EB5EE0021035E /* SwitchViewController.m */,
 				226C68611C36F89E00BFCC0E /* Assets.xcassets */,
 				226C68631C36F89E00BFCC0E /* LaunchScreen.storyboard */,
 				226C68661C36F89E00BFCC0E /* Info.plist */,
@@ -75,6 +89,9 @@
 			isa = PBXGroup;
 			children = (
 				226C68561C36F89E00BFCC0E /* main.m */,
+				22E752D71C3EF9CB0021035E /* AVFoundation.framework */,
+				22E752D51C3EEDC10021035E /* AVKit.framework */,
+				22E752D31C3EE5A70021035E /* MediaPlayer.framework */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -138,7 +155,7 @@
 			files = (
 				226C68651C36F89E00BFCC0E /* LaunchScreen.storyboard in Resources */,
 				226C68621C36F89E00BFCC0E /* Assets.xcassets in Resources */,
-				226C68601C36F89E00BFCC0E /* Main.storyboard in Resources */,
+				22E752CF1C3EB3920021035E /* SwitchViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +168,7 @@
 			files = (
 				226C685D1C36F89E00BFCC0E /* ViewController.m in Sources */,
 				226C685A1C36F89E00BFCC0E /* AppDelegate.m in Sources */,
+				22E752D21C3EB5EE0021035E /* SwitchViewController.m in Sources */,
 				226C68571C36F89E00BFCC0E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,14 +176,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		226C685E1C36F89E00BFCC0E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				226C685F1C36F89E00BFCC0E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		226C68631C36F89E00BFCC0E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

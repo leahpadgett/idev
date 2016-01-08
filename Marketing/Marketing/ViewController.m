@@ -7,8 +7,14 @@
 //
 
 #import "ViewController.h"
+#import <AVKit/AVKit.h>
+#import <AVFoundation/AVFoundation.h>
+
 
 @interface ViewController ()
+{
+
+}
 
 @end
 
@@ -19,17 +25,27 @@
     
     [scroller setScrollEnabled:YES];
     [scroller setContentSize:CGSizeMake(320, 2000)];
-   
+    
+
+ 
+    
+//   
+//SwitchViewController *switchViewController = [[SwitchViewController alloc] init];
+//   
+//  [self presentViewController:switchViewController animated:YES completion:nil];
     
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+
 - (IBAction)learnMore:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.idevicesinc.com/switch/"]];
+      [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.idevicesinc.com/switch/"]];
     
 }
 
@@ -38,13 +54,10 @@
 }
 
 - (IBAction)switchVideo:(id)sender {
-//    
-//    NSString *videoEmbedCode = @"<iframe width=\"320\" height=\"175\" src=\"https://www.youtube.com/embed/hnzj1tFAULo\" frameborder=\"0\" allowfullscreen></iframe>";
 
-    
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.youtube.com/watch?v=hnzj1tFAULo"]];
 
-  
+   
 }
 
 

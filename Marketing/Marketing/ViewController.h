@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVKit/AVKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface ViewController : UIViewController {
     IBOutlet UIScrollView *scroller;
@@ -16,11 +18,12 @@
 
 - (IBAction)learnMore:(id)sender;
 
+
 - (IBAction)shopNow:(id)sender;
 
 - (IBAction)switchVideo:(id)sender;
 
-
+@property(nonatomic, strong) AVPlayer *player;
 
 @end
 
