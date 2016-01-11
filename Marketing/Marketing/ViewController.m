@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import <AVKit/AVKit.h>
 #import <AVFoundation/AVFoundation.h>
+#import <MediaPlayer/MediaPlayer.h>
 
 
 @interface ViewController ()
@@ -54,9 +55,11 @@
 }
 
 - (IBAction)switchVideo:(id)sender {
-
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.youtube.com/watch?v=hnzj1tFAULo"]];
-
+    
+    NSURL *movieURL = [NSURL URLWithString:@"http://idevicesinc.com/connected-switch-video/"];
+    self.movieController = [[MPMoviePlayerViewController alloc] initWithContentURL:movieURL];
+    [self presentMoviePlayerViewControllerAnimated:self.movieController];
+    [self.movieController.moviePlayer play];
    
 }
 
