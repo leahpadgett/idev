@@ -18,6 +18,8 @@
 
 @property (retain, nonatomic) MPMoviePlayerViewController *movieController;
 
+//@property (nonatomic, strong) UIImageView *imageView;
+
 - (IBAction)learnMore:(id)sender;
 
 
@@ -25,7 +27,7 @@
 
 - (IBAction)switchVideo:(id)sender;
 
-@property(nonatomic, strong) AVPlayer *player;
+
 
 @end
 

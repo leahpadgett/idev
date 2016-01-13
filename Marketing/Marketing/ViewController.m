@@ -25,8 +25,15 @@
     [super viewDidLoad];
     
     [scroller setScrollEnabled:YES];
-    [scroller setContentSize:CGSizeMake(320, 2000)];
+    [scroller setContentSize:CGSizeMake(scroller.frame.size.width, scroller.frame.size.height)];
     
+//    UIImage *image = [UIImage imageNamed:@"SwitchVidSS.png"];
+//    
+//    
+//    
+//    self.imageView = [[UIImageView alloc] initWithImage:image];
+//    self.imageView.translatesAutoresizingMaskIntoConstraints = NO;
+//    [self.view addSubview:self.imageView];
 
  
     
